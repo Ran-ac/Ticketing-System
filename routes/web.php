@@ -5,7 +5,6 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ClinicController;
 use App\Http\Controllers\TicketController;
 
-use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,7 +22,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-
+Route::get('account-logout', [UserController::class, 'getSignOut'])->name('account.logout');
 
 //Users
 Route::get('/admin/user/index', [UserController::class, 'index'])->name('admin.user.index');

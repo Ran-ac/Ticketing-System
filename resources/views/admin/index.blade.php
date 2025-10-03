@@ -29,7 +29,7 @@
                     <div>
                       <h4 class="card-title">Branch Concerns</h4>
                       <p class="card-subtitle">
-                        Pinaka madaming tangang branch
+                       
                       </p>
                     </div>
                     <div class="ms-auto">
