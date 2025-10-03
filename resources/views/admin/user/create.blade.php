@@ -122,7 +122,7 @@
         });
         console.log(tagSelector);
         
-        $('#create_user').on('submit', function(e){
+        $('#create_users').on('submit', function(e){
             e.preventDefault();
             let formData = new FormData(this);
 
@@ -135,7 +135,7 @@
                 success: function(response){
                     console.log(response.success);
                     if (response.success) {
-                        alert('Clinic added successfully!');
+                        alert('User added successfully!');
                         $('#formModal').modal('hide'); // Hide modal after success
                         location.reload();
                     } else {

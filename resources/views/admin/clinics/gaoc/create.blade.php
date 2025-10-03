@@ -70,7 +70,7 @@
                     if (response.success) {
                         alert('Clinic added successfully!');
                         $('#formModal').modal('hide'); // Hide modal after success
-                        location.reload();
+                        window,.location.reload();
                     } else {
                         alert('Something went wrong!');
                     }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Clinic;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rules;
 use Illuminate\Support\Facades\Hash;
 
@@ -191,4 +191,12 @@ public function edit(String $id)
 
         return response()->json(['success' => 'User deleted successfully!']);
     }
+
+public function getSignOut() {
+		
+	Auth::logout();
+	return redirect('/');
+	
+}
+
 }
